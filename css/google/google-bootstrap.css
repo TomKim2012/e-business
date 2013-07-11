@@ -2428,9 +2428,9 @@ a.thumbnail:hover {
   color: #000000;
 }
 .label {
-  -webkit-border-radius: 0;
+  /*-webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0;
+  border-radius: 0;*/
 }
 .label-important,
 .badge-important {

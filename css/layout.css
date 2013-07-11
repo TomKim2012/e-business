@@ -261,7 +261,7 @@ input.search{
 }
 
 #sidebar-nav {
-	border-right: 1pt solid #B3B3B3;
+	/*border-right: 1pt solid #B3B3B3;*/
 	width: 200px;
 	min-height: 700px;
 	padding: 10px 0px 0px 10px;
@@ -274,8 +274,9 @@ input.search{
 	margin: 0em;
 	padding: 10px;	
 	border: 1px solid #CCCCCC;
-	width: 284px;
-	height: 700px;
+	width: 295px;
+	height: 580px;
+	overflow: auto;
 }
 #middle-nav .nav-top i{
 	margin-left: 5px;
@@ -298,12 +299,23 @@ input.search{
 	padding-top: 2px;
 }
 #middle-nav .message-container{	
-border-bottom: 1px solid #dae1e8;
-cursor: pointer;
+	border-bottom: 1px solid #dae1e8;
+	cursor: pointer;
+	background-color: #fafafa;
+}
+
+#middle-nav .message-container span{
+	float: right;
+	margin-right: 20px;
+}	
+#middle-nav p{
+	margin: 0 0 2px;
 }
 #middle-nav .unread{
 	border-left: 2px solid #0000FF;
-	margin:5px;
+	font-weight: 100;
+	margin:2px;
+	background-color: #ffffff;	
 }
 #middle-nav .unread p{
 	padding-left: 7px;
@@ -315,10 +327,27 @@ cursor: pointer;
 #detailed-info {
 	background-color: #ffffff;
 	margin-left: 10px;
-	padding: 10px;	
+	padding: 10px 20px 10px 10px;	
 	border: 1px solid #CCCCCC;
-	width: 840px;
-	height: 700px;
+	width: 830px;
+	height: 580px;
+	overflow:auto;
+}
+#detailed-info .action-area{
+	margin-bottom: 20px; 
+	margin-left: 5px;
+}
+
+#detailed-info .personal_info{
+	padding: 10px 0 0 10px;
+	height: 50px;
+}
+
+#detailed-info .attachment-section{
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 10px;
+	padding: 20px 0;
 }
 
 /*--Dashboard Menu--*/
@@ -463,7 +492,7 @@ cursor: pointer;
 }
 
 
-/*Navigation Menu*/
+/*Navigation Menu -- 2nd Section*/
 #navigation-menu {
 	list-style: none;
 	padding-right: 0px;
@@ -488,16 +517,18 @@ cursor: pointer;
 
 #navigation-menu > li.active > a,
 #navigation-menu > li > a:hover {
+	color:rgba(51, 69, 90, 1);
 	text-decoration: none;
 }
 #navigation-menu > li.active a {
+	font-weight: 600;
 	text-shadow: 1px 1px 1px #fff;
 }
 #navigation-menu > li.active i{
 	opacity: 1;
 }
 
-	/* font awesome icon */
+/* font awesome icon */
 #navigation-menu > li .icon-group {
 	font-size: 22px;
 }
