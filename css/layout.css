@@ -5,6 +5,7 @@ body {
 	margin: 0px;
 	font-size: 12px;
 	padding: 0px;
+	overflow-y:hidden; 
 	/*-webkit-font-smoothing: antialiased;*/
 }
 h1,h2,h3,h4,h5 {
@@ -28,6 +29,12 @@ input.search{
 	border-radius: 2px;
 	top: 11px;
 }
+textarea{
+	width: 98%;
+	padding-right: 5px;
+	height: 70px;
+	margin-bottom: 0px;
+}
 
 .header{
 	margin-bottom: 60px;
@@ -45,6 +52,12 @@ input.search{
 .navbar{
 	margin-bottom: 5px;
 }
+.navbar .brand{
+	color: #1B1464;
+	margin-top: 10px;
+	text-shadow:1px 1px #1B1464; 
+}
+
 /* search input */
 .navbar input.search {
 	background: url("img/lens.png") #0f1217 no-repeat 95%;
@@ -68,19 +81,26 @@ input.search{
 	color: #9ba3ad;
 	font-size: 21px;
 }
+.navbar .nav .dropdown-toggle .caret{
+	margin-top: 15px;
+}
 
+.navbar .nav > li > a{
+}
 
 /* notification menu with custom dropdowns */
 .navbar .notification-dropdown {
+	border-left: 1px solid #dae1e8;
+	border-right: 1px solid #dae1e8;
 	position: relative;
+	padding-top: 5px;
 }
 .navbar .notification-dropdown > a:hover,
 .navbar .notification-dropdown > a.active {
-	background: #254261 !important;
-	box-shadow: inset 1px 0px 1px 0px rgb(62, 90, 121);
+	background: #dae1e8 !important;
 }
 .navbar .notification-dropdown i {
-	font-size: 17px;
+	font-size: 25px;
 	color: #9ba3ad;	
 }
 .navbar .notification-dropdown .count {
@@ -247,7 +267,7 @@ input.search{
 	margin-top: 6px;
 }
 
-/*Whole Container*/
+/*Whole Inside Container*/
 .main-container{
 	background-color: #fafafa;
 
@@ -272,7 +292,8 @@ input.search{
 #middle-nav {
 	background-color: #ffffff;
 	margin: 0em;
-	padding: 10px;	
+	padding: 10px;
+	padding-right:0px;	
 	border: 1px solid #CCCCCC;
 	width: 295px;
 	height: 580px;
@@ -327,7 +348,7 @@ input.search{
 #detailed-info {
 	background-color: #ffffff;
 	margin-left: 10px;
-	padding: 10px 20px 10px 10px;	
+	padding: 0px 20px 10px 10px;	
 	border: 1px solid #CCCCCC;
 	width: 830px;
 	height: 580px;
@@ -335,19 +356,44 @@ input.search{
 }
 #detailed-info .action-area{
 	margin-bottom: 20px; 
-	margin-left: 5px;
+}
+#detailed-info .action-area a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#detailed-info .content-area h5{
+	text-decoration: underline;
 }
 
 #detailed-info .personal_info{
-	padding: 10px 0 0 10px;
-	height: 50px;
+	padding: 5px 0 0 5px;
+	height: 40px;
+}
+#detailed-info .personal_info .span4{
+	margin-left: 5px;
 }
 
 #detailed-info .attachment-section{
 	border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
 	margin-top: 10px;
-	padding: 20px 0;
+	padding: 5px 0 10px 0;
+}
+
+#detailed-info .status-section i{
+	font-size: 17px;
+	margin-right: 6px;
+}
+
+#detailed-info .status-section .icon-chevron-right{
+	margin:6px;
+}
+
+#detailed-info .comment-section .well{
+	padding:5px;
+	height: 40px;
+	margin-bottom:10px;
 }
 
 /*--Dashboard Menu--*/
@@ -471,6 +517,10 @@ input.search{
 	border-bottom: 1px solid #dae1e8;
 	box-shadow: 0 2px 1px -1px #FFFFFF;
 	padding-bottom: 10px;
+}
+#dashboard-menu ul.second-menu{
+	border-bottom: none;
+
 }
 #dashboard-menu ul.submenu.active {
 	display: block;
