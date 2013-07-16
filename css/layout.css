@@ -57,6 +57,13 @@ textarea{
 	margin-top: 10px;
 	text-shadow:1px 1px #1B1464; 
 }
+.login-wrapper .brand{
+	text-decoration: none;
+	font-size: 2em;
+	color: #ffffff;
+	margin: 20px;
+	text-shadow:1px 1px #1B1464; 
+}
 
 /* search input */
 .navbar input.search {
